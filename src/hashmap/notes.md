@@ -3,14 +3,16 @@
 
 # Syntax: Declaration
 ```
-public class HashMap<K,V> extends AbstractMap<K,V>
-                          implements Map<K,V>, Cloneable, Serializable
+public class HashMap<K,V> 
+              extends AbstractMap<K,V>
+              implements Map<K,V>, 
+              Cloneable, Serializable
 ```
 The direct subclasses are LinkedHashMap, PrinterStateReasons
 
 # Parameters
-- Type of keys maintained by this map
-- The type of mapped values
+- K: Type of keys maintained by this map
+- V: The type of mapped values
 
 
 # Constructors
@@ -73,7 +75,7 @@ A technique of converting a large String to small String that represents the sam
 - Extends an abstract class `AbstractMap` which also provides an incomplete implementation of the `Map` interface
 - Also implements `Cloneable` and `Serializable` interface. 
 - Does not allow duplicate keys but allows duplicate values.
-- Allows null key but only once and multiple null values.
+- `Allows null key` but only `once` and `multiple null values`.
 - This class makes no guarantees as to the order of the map.
 - It does not guarantee that the order will remain constant over time.
 
@@ -96,7 +98,7 @@ Can be seen that the node is containing a reference to its own object (Linked li
 # Performance
 Performance of HashMap depends on 2 parameters:
   1. Initial Capacity
-  2. Load Factor
+  2. Load Factor / Fill Ratio
 
 ### Initial Capacity
   - Capacity of the HashMap at the time of its creation. 
@@ -124,8 +126,8 @@ The expected number of values should be taken into account to set the initial ca
 [//]: # (TODO)
 
 # Time Complexity
-- Constant time complexity for basic operations
-- Iteration / Traversing is directly proportional to the `capacity + size`
+- Constant time complexity for basic operations `O(1)`.
+- Iteration / Traversing is directly proportional to the `capacity + size`.
 
 # Applications of HashMap
 - Used when we need efficient implementation of search, insert and delete operations
@@ -143,4 +145,4 @@ The expected number of values should be taken into account to set the initial ca
 [//]: # (TODO)
 
 # References
-[GeeksForGeeks](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/)
+[GeeksForGeeks](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) \
